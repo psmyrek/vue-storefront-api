@@ -14,6 +14,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 import resolvers from './graphql/resolvers';
 import typeDefs from './graphql/schema';
 import * as path from 'path'
+import * as nest from './nest';
 
 const app = express();
 
@@ -70,5 +71,8 @@ app.use('/graphql', graphqlExpress(req => ({
 })));
 
 app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
+
+// NestJS framework
+nest.initialize(app);
 
 export default app;

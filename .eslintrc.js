@@ -43,7 +43,11 @@ module.exports = {
     'vue-storefront/no-corepage-import': 'error',
     'vue-storefront/no-corepage': 'error',
     'no-console': 0,
-    'no-unused-vars': 1
+    'no-unused-vars': 1,
+    'no-useless-constructor': 0,
+    '@typescript-eslint/no-useless-constructor': 'warn',
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
   },
   overrides: [
     {

@@ -21,18 +21,6 @@ export default ({ config, db }) => {
   // mount the user resource
   api.use('/user', user({ config, db }));
 
-  // mount the stock resource
-  api.use('/stock', stock({ config, db }));
-
-  // mount the review resource
-  api.use('/review', review({ config, db }));
-
-  // mount the cart resource
-  api.use('/cart', cart({ config, db }));
-
-  // mount the product resource
-  api.use('/product', product({ config, db }))
-
   // mount the sync resource
   api.use('/sync', sync({ config, db }))
 
