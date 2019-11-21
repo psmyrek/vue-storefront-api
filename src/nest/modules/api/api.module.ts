@@ -7,4 +7,4 @@ import { ReviewModule } from './review/review.module';
 @Module({
   imports: [CartModule, ProductModule, StockModule, ReviewModule]
 })
-export class apiModule { }
+export class ApiModule { }

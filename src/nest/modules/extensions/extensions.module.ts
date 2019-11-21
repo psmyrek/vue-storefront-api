@@ -4,4 +4,4 @@ import { CmsDataModule } from './cms-data/cms-data.module';
 @Module({
   imports: [CmsDataModule]
 })
-export class extensionsModule { }
+export class ExtensionsModule { }
